@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ShoppingCart, Menu, X } from "lucide-react";
 import { useState } from "react";
-import { useCart, CartItem } from "@/context/cartcontent";
+import { useCart, CartItem } from "@/context/CartContext";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
