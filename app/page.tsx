@@ -49,7 +49,7 @@ export default function Home() {
                 NO CAPS
               </h1>
               <p className="text-xl sm:text-2xl text-gray-300 font-light max-w-2xl mx-auto">
-                Pakistan's most authentic collection of premium caps. From Nike to Adidas, we've got the best.
+                Pakistan's most authentic collection of premium caps(Trust me bro). From Nike to Adidas, we've got the best.
               </p>
             </div>
 
