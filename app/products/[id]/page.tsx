@@ -26,8 +26,7 @@ export default function ProductDetailPage() {
   const [selectedSize, setSelectedSize] = useState<string>('')
   const [quantity, setQuantity] = useState(1)
   const [addedToCart, setAddedToCart] = useState(false)
-  const { addItem } = useCart()
-
+  const { addItem, openCart } = useCart();
   // Fetch product details
   useEffect(() => {
     const fetchProduct = async () => {
@@ -67,8 +66,8 @@ export default function ProductDetailPage() {
       quantity: quantity,
     })
 
-    setAddedToCart(true)
-    setTimeout(() => setAddedToCart(false), 2000)
+    openCart();
+
   }
 
   if (loading) {
