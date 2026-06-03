@@ -9,7 +9,7 @@ export default function CartDrawer() {
   const { items, isOpen, closeCart, removeItem, updateQuantity, total } = useCart();
   const cartTotal = total();
 
-  // Prevent body scroll when drawer is open
+  // Prevent body scroll when drawer is open is
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
